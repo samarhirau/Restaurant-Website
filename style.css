@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background: #ebe3cd;
+  --textColor: #12202f;
+  --buttonColor-1: #df581e;
+  --buttonColor-2: #6bb99c;
+  --boxColor-1: #faf8ef;
+  --boxColor-2: #ccc1a3;
+  --footerColor: #fa9d30;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--buttonColor-2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--boxColor-1);
+}
+
+body {
+  background-color: var(--background);
+}
+header nav {
+  height: 40px;
+  border-radius: 30px;
+  color: var(--boxColor-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 40px 0px 40px;
+  padding: 0px 70px;
+  background-color: var(--textColor);
+}
+
+nav ul {
+  gap: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: var(--boxColor-1);
+}
+.signUp a {
+  color: var(--buttonColor-2);
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: var(--buttonColor-2);
+}
+.line-effects {
+  width: 0;
+  border-radius: 10px;
+  height: 3px;
+  background-color: var(--buttonColor-2);
+  transition: all 0.2s linear;
+  position: fixed;
+}
+
+.home .lamp {
+  z-index: 2;
+  position: absolute;
+  width: 50px;
+  float: right;
+  right: 20%;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+}
+.content {
+  width: 400px;
+  margin-left: 60px;
+  position: relative;
+}
+.home {
+  height: 100vh;
+}
+.home img {
+  margin-right: 60px;
+  width: 60%;
+}
+.content h1 {
+  font-size: 2.5rem;
+  color: var(--textColor);
+}
+.content p {
+  line-height: 30px;
+  font-size: 1.2rem;
+  color: var(--textColor);
+}
+.first-para {
+  font-weight: 600;
+}
+.sec-para {
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 40px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: var(--buttonColor-1);
+  color: var(--boxColor-1);
+  border: none;
+  cursor: pointer;
+}
+
+.see-Btn {
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 40px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: var(--textColor);
+  border: none;
+  cursor: pointer;
+}
+section .plant {
+  width: 150px;
+  top: 200px;
+  left: 330px;
+  position: absolute;
+}
+
+.booking h1 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--textColor);
+  margin-left: 60px;
+}
+
+.booking-box {
+  position: relative;
+  top: 0;
+  height: 150px;
+  background-color: var(--boxColor-1);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-box button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: var(--buttonColor-2);
+  color: var(--boxColor-1);
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.booking-box .book {
+  margin-left: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--textColor);
+}
+.book label {
+  display: inline-block;
+}
+.book input {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1.5px solid var(--textColor);
+  margin-right: 30px;
+  width: auto;
+}
+.show-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.show-menu h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--buttonColor-1);
+  margin-top: 30px;
+}
+.show-menu h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--textColor);
+  margin-bottom: 30px;
+}
+
+.menu-box .box {
+  height: 380px;
+  width: 280px;
+  border: none;
+  border-radius: 20px;
+  background: var(--boxColor-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+}
+.box img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--textColor);
+}
+.box p {
+  font-size: 1rem;
+  color: var(--textColor);
+}
+.box button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: var(--buttonColor-1);
+  color: var(--boxColor-1);
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.menu-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.covid h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--buttonColor-1);
+  margin-top: 60px;
+}
+.covid h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--textColor);
+  margin-top: -5px;
+  text-align: center;
+}
+
+.covid .covid-btn {
+  position: relative;
+  left: 47%;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: var(--buttonColor-2);
+  color: var(--boxColor-1);
+  border: none;
+  cursor: pointer;
+}
+
+.covid {
+  position: relative;
+  height: 80vh;
+}
+.covid img {
+  width: 220px;
+
+
+
+}
+.covid .img1 img, .img2 img, .img3 img, .img4 img {
+  width: 200px;
+}
+.covid .img1 {
+  position: absolute;
+left: 0;
+  top: 0;
+  
+}
+.covid .img2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.covid .img3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .covid .img4 {
+    position: absolute;
+   left: 0;
+    bottom: 0;
+  }
+
+  .covid-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.covid-img img{
+    margin-top: 60px;
+    width: 500px;
+}
+
+.about{
+    position: relative;
+    height: 100%;
+    margin-top: 100px;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left .text-area{
+    width: 300px;
+    margin-left: 60px;
+}
+.text-area h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--buttonColor-1);
+}
+.text-area h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+.text-area p{
+    font-size: 1rem;
+    color: var(--textColor);
+    margin-top: 20px;
+}
+.text-area button{
+    font-size: 14px;
+    text-decoration: none; 
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: var(--buttonColor-1);
+    color: var(--boxColor-1);
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.illusion{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+    flex-wrap: nowrap;
+    width: 600px;
+
+}
+.illusion img{
+    width: 100px;
+    margin-right: 30px;
+}
+
+.main-img{
+    width: 600px;
+    float: right;
+    margin-right: 30px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+margin-top: 100px;
+}
+.right img{
+    width: 500px;
+    margin-left: 60px;
+}
+.right .right-text{
+    width: 300px;
+    margin-right: 60px;
+}
+.right-text h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--buttonColor-1);
+}
+.right-text h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+.right-text p{
+    font-size: 1rem;
+    color: var(--textColor);
+    margin-top: 20px;
+}
+.right-text button{
+    font-size: 14px;
+    text-decoration: none; 
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: var(--buttonColor-2);
+    color: var(--boxColor-1);
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.center{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    margin: 100px 60px ;
+    height: 500px;
+    border-radius: 25px;
+    background: var(--boxColor-1);
+}
+.left-text-area{
+    width: 300px;
+    margin-left: 60px;
+
+}
+.left-text-area h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--buttonColor-1);
+
+}
+.left-text-area h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--textColor);
+ 
+}
+.left-text-area p{
+    font-size: 1rem;
+    color: var(--textColor);
+
+}
+.left-text-area button{
+    font-size: 14px;
+    text-decoration: none; 
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: var(--buttonColor-1);
+    color: var(--boxColor-1);
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+ 
+ 
+}
+.center-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 700px;
+    height: 500px;
+
+flex-direction: column;
+
+}
+
+.center-div .first-center{
+width: 150px;
+position: absolute;
+top: 20px;
+right: 500px;
+}
+.center-div .sec-center{
+    width: 550px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    }
+.contact{
+    position: relative;
+    display: block;
+    height: 100%;
+    margin-top: 100px;
+
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    flex-direction: column;
+    margin-top: 100px;
+
+   
+}
+.review h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--buttonColor-1);
+    display: inline;
+}
+.review span{
+    position: absolute;
+
+    right: 30px;
+
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: var(--buttonColor-2);
+    display: inline-block;
+}
+.review h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--textColor);
+    margin-top: -5px;
+}
+.review .review-box{
+ display: flex;
+ justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 150px;
+    background: var(--boxColor-1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 60px;
+    position: relative;
+
+}
+.review-box img{
+    width: 100px;
+    margin-right: 20px;
+}
+.for-row{
+    margin: 20px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.subscribe .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    margin-top: 100px;
+    flex-direction: column;
+
+}
+.form h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--buttonColor-1);
+
+}
+.form h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--textColor);
+    margin-top: -5px;
+}
+.form input{
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    border: none;
+    background: #ccc1a3;
+    width: 500px;
+    margin: 10px 0;
+}
+.form input:focus{
+    outline: none;
+}
+.form button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--buttonColor-2);
+    color: var(--textColor);
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px ;
+}
+
+
+footer{
+    height: 50vh;
+    background: var(--footerColor);
+
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+.footer h3{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--boxColor-1);
+}
+.footer ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer ul li{
+    margin: 20px;
+}
+.sign-up{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-up h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--boxColor-1);
+}
+.sign-up input{
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-right: 30px;
+    border: none;
+    background: #ccc1a3;
+    width: 500px;
+    margin: 10px 0;
+    
+}
+.sign-up input:focus{
+    outline: none;
+}
+.sign-up button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--buttonColor-2);
+    color: var(--boxColor-1);
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px ;
+}
